@@ -2,6 +2,14 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+
+		<script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		// convenience function to get the id attribute of generated sketch html element
+		function getProcessingSketchId () { return 'ParticleSystems'; }
+		</script>
+
 	</head>
 
 	<body>
@@ -22,6 +30,17 @@
 			<li> <img src = "imagenes/cat.jpg"/> </li>
 			<li> muchas imagenes </li>
 		</ul>
+
+		<div>
+				<canvas id="ParticleSystems" data-processing-sources="ParticleSystems.pde" 
+						width="640" height="360">
+					<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    </div>
 
 	</body>
 
